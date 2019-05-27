@@ -1,0 +1,19 @@
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- vs2015
+expat:
+- '2.2'
+libiconv:
+- '1.15'
+pin_run_as_build:
+  expat:
+    max_pin: x.x
+  libiconv:
+    max_pin: x.x
+  zlib:
+    max_pin: x.x
+zlib:
+- '1.2'
