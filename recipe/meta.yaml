@@ -1,13 +1,13 @@
 {% set name = "Exiv2" %}
-{% set version = "0.27.1" %}
+{% set version = "0.27.2" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: v{{ version }}
 
 source:
-  url: https://github.com/{{ name }}/{{ name|lower }}/archive/{{ version }}.tar.gz
-  sha256: 1b3766b2c203ce213a4195de14d61694017ec1a69d15d4575bccecef130990fe
+  url: https://github.com/{{ name }}/{{ name|lower }}/archive/v{{ version }}.tar.gz
+  sha256: 3dbcaf01fbc5b98d42f091d1ff0d4b6cd9750dc724de3d9c0d113948570b2934
 
 build:
   number: 0
