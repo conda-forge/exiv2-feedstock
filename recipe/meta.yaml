@@ -10,19 +10,18 @@ source:
   sha256: 3dbcaf01fbc5b98d42f091d1ff0d4b6cd9750dc724de3d9c0d113948570b2934
 
 build:
-  number: 0
-  skip: True  # [win and py2k]
+  number: 1
+  skip: True  # [win and vc<14]
+  run_exports:
+    # Many changes even in patch versions
+    # https://abi-laboratory.pro/index.php?view=timeline&l=exiv2
+    - {{ pin_subpackage('exiv2', max_pin='x.x.x') }}
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - cmake
   host:
-    - expat
-    - zlib
-    - libiconv
-    - gettext  # [osx]
-  run:
     - expat
     - zlib
     - libiconv
