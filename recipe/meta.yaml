@@ -1,5 +1,5 @@
 {% set name = "Exiv2" %}
-{% set version = "0.27.2" %}
+{% set version = "0.27.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name|lower }}/archive/v{{ version }}.tar.gz
-  sha256: 3dbcaf01fbc5b98d42f091d1ff0d4b6cd9750dc724de3d9c0d113948570b2934
+  sha256: 6398bc743c32b85b2cb2a604273b8c90aa4eb0fd7c1700bf66cbb2712b4f00c1
 
 build:
   number: 0
-  skip: True  # [win and py2k]
+  skip: true  # [win and py2k]
 
 requirements:
   build:
@@ -27,7 +27,6 @@ requirements:
     - zlib
     - libiconv
     - gettext  # [osx]
-    
 test:
   commands:
     - exiv2 -h
@@ -40,7 +39,7 @@ about:
   license: GPL-2.0
   license_family: GPL
   license_file: COPYING
-  summary: 'Exiv2 is a Cross-platform C++ library and a command line utility to manage image metadata'
+  summary: Exiv2 is a Cross-platform C++ library and a command line utility to manage image metadata
   description: |
     Exiv2 is a Cross-platform C++ library and a command line utility to manage image metadata. 
     It provides fast and easy read and write access to the Exif, IPTC and XMP metadata and the 
