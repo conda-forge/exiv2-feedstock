@@ -12,9 +12,8 @@ source:
 build:
   number: 1
   run_exports:
-    # Many changes even in patch versions
     # https://abi-laboratory.pro/index.php?view=timeline&l=exiv2
-    - {{ pin_subpackage('exiv2', max_pin='x.x.x') }}
+    - {{ pin_subpackage('exiv2', max_pin='x.x') }}
 
 requirements:
   build:
