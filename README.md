@@ -199,6 +199,3 @@ Feedstock Maintainers
 * [@gillins](https://github.com/gillins/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
-
-<!-- dummy commit to enable rerendering -->
-
