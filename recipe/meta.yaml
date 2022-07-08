@@ -2,7 +2,7 @@
 
 package:
   name: exiv2
-  version: v{{ version }}
+  version: {{ version }}
 
 source:
   url: https://github.com/Exiv2/exiv2/archive/v{{ version }}.tar.gz
