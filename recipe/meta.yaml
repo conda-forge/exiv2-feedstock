@@ -1,4 +1,4 @@
-{% set version = "0.27.3" %}
+{% set version = "0.27.5" %}
 
 package:
   name: exiv2
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/Exiv2/exiv2/archive/v{{ version }}.tar.gz
-  sha256: 6398bc743c32b85b2cb2a604273b8c90aa4eb0fd7c1700bf66cbb2712b4f00c1
+  sha256: 1da1721f84809e4d37b3f106adb18b70b1b0441c860746ce6812bb3df184ed6c
 
 build:
-  number: 3
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/index.php?view=timeline&l=exiv2
     - {{ pin_subpackage('exiv2', max_pin='x.x') }}
