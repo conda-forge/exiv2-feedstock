@@ -3,16 +3,11 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2017
+- vs2019
 expat:
 - '2'
 libiconv:
-- '1.16'
-pin_run_as_build:
-  libiconv:
-    max_pin: x.x
-  zlib:
-    max_pin: x.x
+- '1'
 target_platform:
 - win-64
 zlib:
