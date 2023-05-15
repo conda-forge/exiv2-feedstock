@@ -23,6 +23,7 @@ requirements:
     - expat
     - zlib
     - libiconv
+    - brotli
     - gettext  # [osx]
 
 test:
