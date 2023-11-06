@@ -20,10 +20,11 @@ requirements:
     - cmake
     - make  # [unix]
   host:
+    - brotli
     - expat
-    - zlib
-    - libiconv
     - gettext  # [osx]
+    - libiconv
+    - zlib
 
 test:
   commands:
