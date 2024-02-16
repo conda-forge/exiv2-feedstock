@@ -15,8 +15,6 @@ build:
     - {{ pin_subpackage('exiv2', max_pin='x.x') }}
 
 requirements:
-  run:
-    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
   build:
     - {{ compiler('cxx') }}
     - cmake
@@ -27,6 +25,8 @@ requirements:
     - zlib
     - libiconv
     - gettext  # [osx]
+  run:
+    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
 
 test:
   commands:
