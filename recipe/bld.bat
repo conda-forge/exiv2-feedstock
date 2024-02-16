@@ -3,6 +3,7 @@ cd build
 
 cmake -G "NMake Makefiles" -D CMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
    -D EXIV2_BUILD_SAMPLES=OFF ^
+   -D EXIV2_ENABLE_INIH=OFF ^
    -D CMAKE_BUILD_TYPE=Release ^
    ..
 if errorlevel 1 exit 1
