@@ -1,4 +1,4 @@
-{% set version = "0.28.2" %}
+{% set version = "0.28.3" %}
 
 package:
   name: exiv2
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/Exiv2/exiv2/archive/v{{ version }}.tar.gz
-  sha256: 543bead934135f20f438e0b6d8858c55c5fcb7ff80f5d1d55489965f1aad58b9
+  sha256: 1315e17d454bf4da3cc0edb857b1d2c143670f3485b537d0f946d9ed31d87b70
 
 build:
   number: 0
@@ -17,6 +17,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - make  # [unix]
   host:
@@ -26,7 +27,6 @@ requirements:
     - libiconv
     - gettext  # [osx]
   run:
-    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
 
 test:
   commands:
