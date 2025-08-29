@@ -1,4 +1,4 @@
-{% set version = "0.28.5" %}
+{% set version = "0.28.6" %}
 
 package:
   name: exiv2
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/Exiv2/exiv2/archive/v{{ version }}.tar.gz
-  sha256: e1671f744e379a87ba0c984617406fdf8c0ad0c594e5122f525b2fb7c28d394d
+  sha256: 9d481117b97afa5324bf3ea0ad79f5c2939ae94ba0d0f5f8eb23aee16d9ec58d
 
 build:
   number: 0
