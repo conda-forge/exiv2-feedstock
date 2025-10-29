@@ -9,7 +9,7 @@ source:
   sha256: 5e292b02614dbc0cee40fe1116db2f42f63ef6b2ba430c77b614e17b8d61a638
 
 build:
-  number: 1
+  number: 2
   run_exports:
     # https://abi-laboratory.pro/index.php?view=timeline&l=exiv2
     - {{ pin_subpackage('exiv2', max_pin='x.x') }}
